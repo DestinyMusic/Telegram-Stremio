@@ -1,0 +1,13 @@
+{
+  "name": "Telegram-Stremio",
+  "description": "Self-hosted Telegram media server for Stremio. Everything except DATABASE is configured in the web Setup Wizard after deploy.",
+  "repository": "https://github.com/weebzone/Telegram-Stremio",
+  "keywords": ["telegram", "stremio", "fastapi", "pyrofork"],
+  "stack": "container",
+  "env": {
+    "DATABASE": {
+      "description": "Two or more MongoDB URIs, comma-separated (1 tracking + 1 storage). Required so your settings persist across restarts. Everything else is set in the web Setup Wizard.",
+      "required": true
+    }
+  }
+}
